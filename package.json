@@ -1,0 +1,19 @@
+{
+  "name": "enter-element-on-viewport",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexalemany/enter-element-on-viewport.git"
+  },
+  "author": "Alex Alemany",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexalemany/enter-element-on-viewport/issues"
+  },
+  "homepage": "https://github.com/alexalemany/enter-element-on-viewport#readme"
+}
