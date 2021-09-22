@@ -19,20 +19,17 @@
 			background-color: #f8f8f8;
 			text-transform: uppercase;
 		}
-		li{
-			width: 600px;
-			height: 330px;
-			position: relative;
-			list-style-type: none;
-			margin-bottom: 15px;
-		}
-		img{
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			background-color: #f7f7f7;
-			border: 0;
-		}
+		.content-fake{
+            height: 2400px;
+        }
+        .sub-content{
+            transition: all .5s ease;
+            opacity: 1;
+            margin-bottom: 40px;
+        }
+        .content-fake.visible{
+            opacity: 1;
+        }
 	</style>
 </head>
 
@@ -40,26 +37,9 @@
 <header>
 	Demo enter element on viewport 
 </header>
-	<ul>
-		<li>
-			<img data-src="http://placeimg.com/640/360/any">
-		</li>
-		<li>
-			<img data-src="http://placeimg.com/640/360/people">
-		</li>
-		<li>
-			<img data-src="http://placeimg.com/640/360/animals">
-		</li>
-		<li>
-			<img data-src="http://placeimg.com/640/360/nature">
-		</li>
-		<li>
-			<img data-src="http://placeimg.com/640/360/tech">
-		</li>
-		<li>
-			<img data-src="http://placeimg.com/640/360/architecture">
-		</li>
-	</ul>
+	<div class="content-fake"></div>
+    <div class="sub-content">lorem</div>
+    <script type="module" src="/src/index.ts"></script>
 </body>
 
 </html>

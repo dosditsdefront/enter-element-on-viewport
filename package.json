@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run development",
-    "development": "webpack --mode development --config=webpack.config.js --display-error-details",
-    "watch": "npm run development -- --watch",
-    "prod": "npm run production",
-    "production": "webpack --mode production  --hide-modules --config=webpack.config.js"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
+    "sass": "^1.41.1",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.4",
+    "vite-plugin-eslint": "^1.3.0"
   },
   "repository": {
     "type": "git",
