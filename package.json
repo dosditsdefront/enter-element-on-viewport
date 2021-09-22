@@ -1,8 +1,8 @@
 {
   "name": "enter-element-on-viewport",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/EnterOnViewport.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
