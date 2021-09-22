@@ -1,5 +1,5 @@
 export default class EnterOnViewport {
-    selector:HTMLElement[]
+    selector:NodeListOf<HTMLElement>
     event:string
     constructor(selector:string, event = 'elementOnViewport') {
         this.selector = document.querySelectorAll(selector)
@@ -15,7 +15,7 @@ export default class EnterOnViewport {
         const observer = new IntersectionObserver((elements, observer) => {
             elements.forEach((element) => {
                 if (element.isIntersecting) {
-                    const target = element.target
+                    const target = element.target as HTMLElement
                     this.dispatchEvent(target)
                     observer.unobserve(target)
                 }
