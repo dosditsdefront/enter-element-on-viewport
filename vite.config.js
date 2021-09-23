@@ -1,13 +1,26 @@
-// vite.config.js
-import { resolve } from 'path'
+// @ts-check
+import { defineConfig } from 'vite'
+import dts from 'vite-dts'
 
-export default {
-    plugins: [],
-    build:{
-        rollupOptions:{
-            input:{
-                index:resolve(__dirname,'index.html')
-            }
-        }
-    }
-}
+export default defineConfig({
+    build: {
+        lib: {
+            entry: 'src/EnterOnViewport.ts',
+            formats: ['es', 'cjs'],
+        },
+        rollupOptions: {
+            // external: ['react'],
+            output: {
+                // Since we publish our ./src folder, there's no point
+                // in bloating sourcemaps with another copy of it.
+                sourcemapExcludeSources: true,
+            },
+        },
+        sourcemap: true,
+        // Reduce bloat from legacy polyfills.
+        target: 'esnext',
+        // Leave minification up to applications.
+        minify: false,
+    },
+    plugins: [dts()],
+})
