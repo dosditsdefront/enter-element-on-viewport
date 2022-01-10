@@ -1,5 +1,5 @@
 # enter-element-on-viewport
-Subscribe an array of dom elements and emit event when enter to a viewport
+Trigger event when element reach the viewport for the first time 
 
 ## Features & characteristics:
 * NO dependencies
