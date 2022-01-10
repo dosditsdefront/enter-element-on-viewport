@@ -1,9 +1,11 @@
 {
-  "name": "enter-element-on-viewport",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/enter-element-on-viewport.cjs.js",
-  "module": "dist/enter-element-on-viewport.es.js",
+  "name": "@dosditsdefront/enter-element-on-viewport",
+  "version": "1.0.2",
+  "description": "A Subscriber element emiter",
+  "source": "src/EnterOnViewport.ts",
+  "main": "./dist/enter-element-on-viewport.js",
+  "module": "./dist/enter-element-on-viewport.module.js",
+  "unpkg": "./dist/enter-element-on-viewport.umd.js",
   "files": [
     "dist",
     "src"
@@ -11,7 +13,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "build:module": "microbundle --no-compress"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.1",
@@ -20,17 +23,21 @@
     "sass": "^1.41.1",
     "typescript": "^4.3.2",
     "vite": "^2.5.4",
-    "vite-dts": "^1.0.3",
-    "vite-plugin-eslint": "^1.3.0"
+    "vite-plugin-eslint": "^1.3.0",
+    "microbundle": "^0.14.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexalemany/enter-element-on-viewport.git"
+    "url": "git+https://github.com/dosditsdefront/enter-element-on-viewport.git"
   },
   "author": "Alex Alemany",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexalemany/enter-element-on-viewport/issues"
+    "url": "https://github.com/dosditsdefront/enter-element-on-viewport/issues"
   },
-  "homepage": "https://github.com/alexalemany/enter-element-on-viewport#readme"
+  "homepage": "https://github.com/dosditsdefront/enter-element-on-viewport#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {}
 }
