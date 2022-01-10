@@ -1,6 +1,6 @@
 {
   "name": "@dosditsdefront/enter-element-on-viewport",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Subscriber element emiter",
   "source": "src/EnterOnViewport.ts",
   "main": "./dist/enter-element-on-viewport.js",
