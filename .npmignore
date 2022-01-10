@@ -1,0 +1,8 @@
+.history
+node_modules
+.eslintrc.js
+src/*
+src
+index.html
+tsconfig.com
+vite.config.js
