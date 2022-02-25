@@ -1,15 +1,21 @@
 {
   "name": "@dosditsdefront/enter-element-on-viewport",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "A Subscriber element emiter",
   "source": "src/EnterOnViewport.ts",
-  "main": "./dist/enter-element-on-viewport.js",
+  "main": "./dist/enter-element-on-viewport.cjs",
+  "types": "./dist/EnterOnViewport.d.ts",
   "module": "./dist/enter-element-on-viewport.module.js",
   "unpkg": "./dist/enter-element-on-viewport.umd.js",
   "files": [
     "dist",
     "src"
   ],
+  "type": "module",
+  "exports": {
+    "require": "./dist/enter-element-on-viewport.cjs",      
+    "default": "./dist/enter-element-on-viewport.modern.js" 
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
