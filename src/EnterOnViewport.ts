@@ -1,15 +1,17 @@
 export default class EnterOnViewport {
     selector:NodeListOf<HTMLElement>
     event:string
-    constructor(selector:string, event = 'elementOnViewport') {
+    rootMargin:string
+    constructor(selector:string, event = 'elementOnViewport', rootMargin = '50px') {
         this.selector = document.querySelectorAll(selector)
         this.event = event
+        this.rootMargin = rootMargin
         this.observe()
     }
 
     observe() :void{			
         const observeroptions = {
-            rootMargin: '50px',
+            rootMargin: this.rootMargin,
         }
 
         const observer = new IntersectionObserver((elements, observer) => {
